@@ -55,10 +55,12 @@ def checkout(cart, coupons)
   cart = consolidate_cart(cart)
   cart = apply_coupons(cart, coupons)
   cart = apply_clearance(cart)
-  subtotal =  0
+  total =  0
   cart.each do |item, details_hash|
-    subtotal += details_hash[:price] * details_hash[:count]
+    total += details_hash[:price] * details_hash[:count]
   end
-  return subtotal if subtotal <= 100
-  return (subtotal * 0.9).round(2)
+  if subtotal <= 100
+    return subtotal
+  else
+    return (subtotal * 0.9).round(2)
 end
