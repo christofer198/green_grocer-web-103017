@@ -43,12 +43,9 @@ end
 def apply_clearance(cart)
   # code here
   count = 0
-  cart.each do
-    if cart[count][:clearance] == true
-      cart[count][:price] = cart[count][:price]*0.8
-    end
-    count += 1
-  end
+  
+  puts cart
+  
 
 
 end
