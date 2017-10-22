@@ -34,8 +34,6 @@ def apply_coupons(cart, coupons)
         end
         count += 1
     end
-
-
     cart
 
 end
