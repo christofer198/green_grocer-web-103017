@@ -23,7 +23,7 @@ end
 
 def apply_coupons(cart, coupons)
   # code here
-    count = 0 
+    count = 0
     coupons.each do |key, value|
         if cart.key?(coupons[count][:item]) == true
             if cart[coupons[count][:item]][:count] >= coupons[count][:num]
@@ -34,10 +34,10 @@ def apply_coupons(cart, coupons)
         end
         count += 1
     end
-    
+
 
     cart
-    
+
 end
 
 
