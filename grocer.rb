@@ -43,14 +43,14 @@ end
 def apply_clearance(cart)
   # code here
   count = 0
-  cart.each do 
+  cart.each do
     if cart[count][:clearance] == true
       cart[count][:price] = cart[count][:price]*.8
     end
     count += 1
-  end 
-    
-    
+  end
+
+
 end
 
 def checkout(cart, coupons)
