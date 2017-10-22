@@ -44,7 +44,7 @@ def apply_clearance(cart)
   # code here
   count = 0
 
-  puts cart[:price]
+  puts cart[0]
 
 
 
