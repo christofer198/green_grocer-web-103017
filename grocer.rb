@@ -1,3 +1,4 @@
+require 'pry'
 def consolidate_cart(cart)
   # code here
   #[{"AVOCADO"=>{:price=>3.0, :clearance=>true}}, {"KALE"=>{:price=>3.0, :clearance=>false}}]
@@ -40,6 +41,7 @@ def apply_coupons(cart, coupons)
 
 end
 
+binding.pry
 
 def apply_clearance(cart)
   # code here
