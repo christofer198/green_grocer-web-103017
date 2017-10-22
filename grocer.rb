@@ -52,7 +52,5 @@ end
 
 def checkout(cart, coupons)
   # code here
-  consolidate_cart(cart).each do |key, val|
-    val[:price]
-  end
+   cart = consolidate_cart(cart)
 end
